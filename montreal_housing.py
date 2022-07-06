@@ -9,6 +9,8 @@ import plotly.graph_objs as pg
 import streamlit as st
 from millify import millify
 
+st.set_page_config(layout="wide")
+
 df = pd.read_csv('montreal_housing_with_neighborhoods.csv')
 data = df.copy()
 
